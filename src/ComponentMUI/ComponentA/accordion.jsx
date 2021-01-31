@@ -59,9 +59,11 @@ function AccordionComponent() {
                         <Typography>Accordion 2</Typography>      
                         <div className={styleA.badgeMe}>Locked</div>                  
                      </AccordionSummary>
-                     <AccordionDetails>
-                        <Typography>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quae delectus illo! Quia, consequatur qui. Quis iusto provident quibusdam modi tempora accusamus iure quos debitis id, est ratione enim. Rerum ipsa unde soluta ea porro voluptatibus odit tenetur? Neque doloremque adipisci alias esse accusamus autem a quae iusto similique suscipit.</Typography>
-                     </AccordionDetails>
+                     {expanded && (
+                        <AccordionDetails>
+                           <Typography>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quae delectus illo! Quia, consequatur qui. Quis iusto provident quibusdam modi tempora accusamus iure quos debitis id, est ratione enim. Rerum ipsa unde soluta ea porro voluptatibus odit tenetur? Neque doloremque adipisci alias esse accusamus autem a quae iusto similique suscipit.</Typography>
+                        </AccordionDetails>
+                     )}
                   </Accordion>
                </Grid>
                {/*  ----- Type 2 ----- */}
@@ -96,7 +98,7 @@ function AccordionComponent() {
                </Grid>
                {/*  ----- Type 3 ----- */}
                <Grid item xs={12} style={{textAlign:'center'}}>
-                  <Typography variant='h6'>Type 3</Typography>
+                  <Typography variant='h6'>Type 3 Customize</Typography>
                </Grid>
                <Grid item xs={12} sm={6} md={4}>
                   <AccordionCostumize elevation={2} square={false}>
