@@ -3,6 +3,7 @@ import React, { Fragment } from 'react';
 import CardComponent from './card';
 import ChipComponent from './chip';
 import ClickAwayListenerComponent from './clickAwayListener';
+import ContainerComponent from './container';
 import themeC from './themeC';
 
 function ComponentC() {
@@ -13,6 +14,7 @@ function ComponentC() {
          <CardComponent/>
          <ChipComponent/>
          <ClickAwayListenerComponent/>
+         <ContainerComponent/>
       </ThemeProvider>
    )
 }
