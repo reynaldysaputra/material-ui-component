@@ -10,11 +10,12 @@ import Grid01 from './Youtube/03_grid/01_basic';
 import ComponentA from './ComponentMUI/ComponentA/componentA';
 import ComponentC from './ComponentMUI/ComponentC/ComponentC';
 import HookUseAutoComplete from './HookMUI/useAutoComplete/app';
+import ComponentD from './ComponentMUI/ComponentD/ComponentD';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    {console.log(theme)}
-    <ComponentC />
+    {/* {console.log(theme)} */}
+    <ComponentD />
   </ThemeProvider>,
   document.getElementById('root')
 );
