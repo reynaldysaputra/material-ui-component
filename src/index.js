@@ -8,11 +8,13 @@ import Papers from './Youtube/01_Paper/apps';
 import DarkModes from './Youtube/02_darkMode/apps';
 import Grid01 from './Youtube/03_grid/01_basic';
 import ComponentA from './ComponentMUI/ComponentA/componentA';
+import ComponentC from './ComponentMUI/ComponentC/ComponentC';
+import HookUseAutoComplete from './HookMUI/useAutoComplete/app';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     {console.log(theme)}
-    <ComponentA />
+    <ComponentC />
   </ThemeProvider>,
   document.getElementById('root')
 );

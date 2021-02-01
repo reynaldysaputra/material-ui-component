@@ -26,7 +26,7 @@ function AccordionComponent() {
                   <Typography variant='h6'>Type 1</Typography>
                </Grid>
                <Grid item xs={12} sm={6} md={4}>
-                  <Accordion elevation={2} square={false}>
+                  <Accordion elevation={2} square={false}> 
                      <AccordionSummary
                         expandIcon={<ExpandMoreRoundedIcon/>}
                         aria-controls="panel1a-content"
