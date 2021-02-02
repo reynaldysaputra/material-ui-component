@@ -11,11 +11,12 @@ import ComponentA from './ComponentMUI/ComponentA/componentA';
 import ComponentC from './ComponentMUI/ComponentC/ComponentC';
 import HookUseAutoComplete from './HookMUI/useAutoComplete/app';
 import ComponentD from './ComponentMUI/ComponentD/ComponentD';
+import FinalComponent from './ComponentMUI/FinalComponent/ComponentFinal';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     {/* {console.log(theme)} */}
-    <ComponentD />
+    <FinalComponent />
   </ThemeProvider>,
   document.getElementById('root')
 );
