@@ -4,6 +4,7 @@ import PokemonPage from './Pokemon';
 import PokemonPageDetail from './PokemonDetail';
 import { ThemeProvider } from '@material-ui/core';
 import themePokedex from './themePokedex';
+import ErrorPage from './ErrorPage';
 
 function AppsPokedex() {
    return(
@@ -12,6 +13,7 @@ function AppsPokedex() {
          <BrowserRouter>
             <Route path='/' exact component={PokemonPage} />
             <Route path='/:pokemonID' component={PokemonPageDetail} />
+            <Route path='/err' component={ErrorPage} />
          </BrowserRouter>
       </ThemeProvider>
    )
