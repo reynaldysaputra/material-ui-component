@@ -12,11 +12,12 @@ import ComponentC from './ComponentMUI/ComponentC/ComponentC';
 import HookUseAutoComplete from './HookMUI/useAutoComplete/app';
 import ComponentD from './ComponentMUI/ComponentD/ComponentD';
 import FinalComponent from './ComponentMUI/FinalComponent/ComponentFinal';
+import AppsPokedex from './LATIHAN/01_Pokedex/app';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     {/* {console.log(theme)} */}
-    <FinalComponent />
+    <AppsPokedex />
   </ThemeProvider>,
   document.getElementById('root')
 );

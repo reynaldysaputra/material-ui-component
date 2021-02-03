@@ -19,5 +19,6 @@ export const UseStyleFinal = makeStyles((theme) => ({
       flexGrow : '1',
       textAlign : 'center',
       padding : '10px'
-   }
+   },
+   focusVisible : {}
 }));
