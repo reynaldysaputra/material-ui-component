@@ -5,6 +5,8 @@ import GridComponent from './grid';
 import HiddenComponent from './hidden';
 import ListComponent from './list';
 import MenuComponent from './menu';
+import PopOverComponent from './popOver';
+import RatingComponent from './rating';
 
 function FinalComponent(){
    return(
@@ -13,6 +15,8 @@ function FinalComponent(){
          <HiddenComponent/>
          <ListComponent/>
          <MenuComponent/>
+         <PopOverComponent/>
+         <RatingComponent/>
       </ThemeProvider>
    )
 }

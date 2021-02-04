@@ -17,7 +17,7 @@ import AppsPokedex from './LATIHAN/01_Pokedex/app';
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     {/* {console.log(theme)} */}
-    <AppsPokedex />
+    <FinalComponent />
   </ThemeProvider>,
   document.getElementById('root')
 );
