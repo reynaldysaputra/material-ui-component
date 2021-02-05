@@ -7,6 +7,8 @@ import ListComponent from './list';
 import MenuComponent from './menu';
 import PopOverComponent from './popOver';
 import RatingComponent from './rating';
+import SpeedDealComponent from './speedDeal';
+import TimeLineComponent from './timeline';
 
 function FinalComponent(){
    return(
@@ -17,6 +19,8 @@ function FinalComponent(){
          <MenuComponent/>
          <PopOverComponent/>
          <RatingComponent/>
+         <SpeedDealComponent/>
+         <TimeLineComponent/>
       </ThemeProvider>
    )
 }

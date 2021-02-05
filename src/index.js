@@ -13,11 +13,13 @@ import HookUseAutoComplete from './HookMUI/useAutoComplete/app';
 import ComponentD from './ComponentMUI/ComponentD/ComponentD';
 import FinalComponent from './ComponentMUI/FinalComponent/ComponentFinal';
 import AppsPokedex from './LATIHAN/01_Pokedex/app';
+import StyledComponetMUI from './Styled/styled';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     {/* {console.log(theme)} */}
-    <FinalComponent />
+    {/* <FinalComponent /> */}
+    <StyledComponetMUI/>
   </ThemeProvider>,
   document.getElementById('root')
 );

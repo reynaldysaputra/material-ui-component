@@ -1,9 +1,10 @@
-import { Grid, Typography } from '@material-ui/core';
+import { Grid, Typography, CssBaseline } from '@material-ui/core';
 import { Rating } from '@material-ui/lab';
 import React, { Fragment, useState } from 'react';
 import {UseStyleFinal} from './style';
 import StarOutlineIcon from '@material-ui/icons/StarOutline';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import ScopedCssBaseline from '@material-ui/core/ScopedCssBaseline';
 
 function RatingComponent() {
    const styleFinal = UseStyleFinal();
@@ -12,6 +13,7 @@ function RatingComponent() {
 
    return(
       <Fragment>
+         <CssBaseline/>
          <Grid container justify='center' className={styleFinal.rootFinal} spacing={5}>
             <Grid xs={12} item style={{textAlign:'center'}}>
                <Typography variant='h3'>Rating</Typography>
@@ -68,14 +70,16 @@ function RatingComponent() {
                   <Typography variant='h6'>Type 5 Costumize</Typography>
                </Grid>
                <Grid item xs={0} justify='center'>
-               <Rating
-                     name="customized-color"
-                     value={value2}
-                     onChange={(event, newValue) => setValue2(newValue)}
-                     precision={0.5}
-                     icon={<FavoriteIcon fontSize="inherit" />}
-                     style={{color:'red'}}
-                  />
+                  <ScopedCssBaseline>
+                     <Rating
+                        name="customized-color"
+                        value={value2}
+                        onChange={(event, newValue) => setValue2(newValue)}
+                        precision={0.5}
+                        icon={<FavoriteIcon fontSize="inherit" />}
+                        style={{color:'red'}}
+                     />
+                  </ScopedCssBaseline>
                </Grid>
             </Grid>
          </Grid>
