@@ -17,7 +17,7 @@ import StyledComponetMUI from './Styled/styled';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    {/* {console.log(theme)} */}
+    {console.log(theme)}
     {/* <FinalComponent /> */}
     <StyledComponetMUI/>
   </ThemeProvider>,

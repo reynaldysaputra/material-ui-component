@@ -14,6 +14,12 @@ export const useStyle = makeStyles((theme) => ({
       background: (props) => props.color === 'red'? 
          'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)' :
          'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
-      color : 'white'
+      color : 'white',
+   },
+   activeBoxQuiz : {
+      background : 'green'
+   },
+   unActiveBoxQuiz : {
+      background : 'red'
    }
 }));
