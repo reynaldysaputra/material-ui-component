@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {useStyle, StyledButtons} from './style';
 import Box from '@material-ui/core/Box';
 import { MyButton } from './myComponent';
-import { styled, Button, LinearProgress, Typography, ThemeProvider, CssBaseline } from '@material-ui/core';
+import { styled, Button, LinearProgress, Typography, ThemeProvider, CssBaseline, FormControlLabel, Switch } from '@material-ui/core';
 import {themeStyled} from './theme';
 
 const StyledButton = styled(({ color, ...other }) => (
@@ -24,6 +24,7 @@ function StyledComponetMUI() {
    const style = useStyle(color);
    const [active, setActive] = useState(null);
    const [timer, setTimer] = useState(30);
+   const [classStyle, setClass] = useState('defaultStyled');
 
    const handleActive = (index) => {
       setActive(index);
@@ -44,6 +45,10 @@ function StyledComponetMUI() {
          clearInterval(times);
       };
    }, []);
+
+   const handleChange = (event) => {
+      setClass(event.target.checked ? 'blueStyle' : 'defaultStyled');
+   }
 
    return(
       <ThemeProvider theme={themeStyled}>
@@ -86,6 +91,22 @@ function StyledComponetMUI() {
          <Typography variant='h2'>My Styled Font Nunito</Typography>
 
          <StyledButtons>Hello Word</StyledButtons>
+
+         {/* Dynamic styled with class */}
+         <FormControlLabel
+            control={
+               <Switch
+                  checked={classStyle === 'blueStyle'}
+                  onChange={handleChange}
+                  color="primary"
+                  value="dynamic-class-name"
+               />
+               }
+               label="Blue"
+         />
+         <Button className={classStyle == 'defaultStyled' ? style.defaultStyle : style.blueStyle}>
+            Classes
+         </Button>
       </ThemeProvider>
    )
 }
