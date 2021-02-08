@@ -1,6 +1,7 @@
 import {
    createMuiTheme
 } from "@material-ui/core";
+import theme from "../theme";
 
 export const themeStyled = createMuiTheme({
    typography: {
@@ -24,5 +25,16 @@ themeStyled.typography.h3 = {
    [themeStyled.breakpoints.up('md')]: {
       fontSize: '3rem',
       fontFamily : 'introrustg-base2line'
+   },
+};
+
+themeStyled.typography.h2 = {
+   [themeStyled.breakpoints.up('xs')]: {
+      fontSize: '1.2rem',
+      fontFamily : 'introrustg-base2line'
+   },
+   [themeStyled.breakpoints.up('md')]: {
+      fontSize: '4rem',
+      fontFamily : 'Nunito'
    },
 };

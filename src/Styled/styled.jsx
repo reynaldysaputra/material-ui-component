@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {useStyle} from './style';
+import {useStyle, StyledButtons} from './style';
 import Box from '@material-ui/core/Box';
 import { MyButton } from './myComponent';
 import { styled, Button, LinearProgress, Typography, ThemeProvider, CssBaseline } from '@material-ui/core';
@@ -83,6 +83,9 @@ function StyledComponetMUI() {
             style={{width:'80%', margin:'auto',marginTop : '2vh'}}
          />
          <Typography variant='h3'>My Styled Font</Typography>
+         <Typography variant='h2'>My Styled Font Nunito</Typography>
+
+         <StyledButtons>Hello Word</StyledButtons>
       </ThemeProvider>
    )
 }
