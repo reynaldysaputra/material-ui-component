@@ -14,12 +14,13 @@ import ComponentD from './ComponentMUI/ComponentD/ComponentD';
 import FinalComponent from './ComponentMUI/FinalComponent/ComponentFinal';
 import AppsPokedex from './LATIHAN/01_Pokedex/app';
 import StyledComponetMUI from './Styled/styled';
+import NavbarTraining from './LATIHAN/02_navbar/apps';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
     {console.log(theme)}
     {/* <FinalComponent /> */}
-    <StyledComponetMUI/>
+    <NavbarTraining/>
   </ThemeProvider>,
   document.getElementById('root')
 );

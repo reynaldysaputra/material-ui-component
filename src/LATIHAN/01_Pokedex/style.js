@@ -7,7 +7,7 @@ export const UseStyleFinal = makeStyles((theme) => ({
    cardMediaPokedex: {
       width: '130px',
       height: '130px',
-      margin: 'auto'
+      margin: 'auto',
    },
    containerSearch : {
       display : 'flex',

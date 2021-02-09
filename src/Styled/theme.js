@@ -1,6 +1,7 @@
 import {
    createMuiTheme
 } from "@material-ui/core";
+import { blue } from "@material-ui/core/colors";
 import theme from "../theme";
 
 export const themeStyled = createMuiTheme({
@@ -16,6 +17,23 @@ export const themeStyled = createMuiTheme({
          'sans-serif'
       ].join(','),
    },
+   overrides : { // Ini mengganti style dari component asli material-ui
+      MuiButton : {
+         root : {
+            color : blue[800]
+         },
+         fullWidth : { // ini nama kelas di material-ui
+            width : '90% !important'
+         }
+      }
+   },
+   props : {
+      MuiButton : {
+         variant : 'contained',
+         color : 'primary',
+         disableRipple : true
+      }
+   }
 })
 
 themeStyled.typography.h3 = {

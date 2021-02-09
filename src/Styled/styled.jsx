@@ -104,9 +104,11 @@ function StyledComponetMUI() {
                }
                label="Blue"
          />
-         <Button className={classStyle == 'defaultStyled' ? style.defaultStyle : style.blueStyle}>
+         <Button className={classStyle == 'defaultStyled' ? style.defaultStyle : style.blueStyle} fullWidth>
             Classes
          </Button>
+
+         <Button>Button Polosan</Button>
       </ThemeProvider>
    )
 }
