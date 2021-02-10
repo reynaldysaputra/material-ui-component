@@ -11,7 +11,9 @@ export const useStyleNav = makeStyles((theme) => ({
       fontFamily : 'Nunito',
       fontWeight : '800',
       color: 'white',
+      textAlign : 'center',
       [themeNav.breakpoints.down('md')] : {
+         width : '100%',
          fontSize : '1.4rem',
          fontWeight : 'bold'
       },
@@ -38,6 +40,7 @@ export const useStyleNav = makeStyles((theme) => ({
       display : 'grid',
       gridTemplateColumn : '100%',
       transition : '1s',
+      textAlign : 'center',
       '& > *' : {
          height : '10vh'
       }

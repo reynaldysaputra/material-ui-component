@@ -21,7 +21,7 @@ function NavbarTraining() {
                   <Hidden mdUp>
                      <IconButton 
                         color='inherit' 
-                        style={{padding:'0px', marginRight:'20%', visibility : openMenu ? 'hidden' : 'visible'}} 
+                        style={{padding:'0px', visibility : openMenu ? 'hidden' : 'visible'}} 
                         onClick={() => setOpenMenu(!openMenu)}
                      >   
                         <MenuIcon/>
